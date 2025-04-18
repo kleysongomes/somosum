@@ -1,105 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Diagoona HTML CSS Template</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> <!-- https://fonts.google.com/ -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
-    <link href="fontawesome/css/all.min.css" rel="stylesheet" /> <!-- https://fontawesome.com/ -->
-    <link href="css/templatemo-diagoona.css" rel="stylesheet" />
-<!--
-
-TemplateMo 550 Diagoona
-
-https://templatemo.com/tm-550-diagoona
-
--->
+    <title>Website Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div class="tm-container">        
-        <div>
-            <div class="tm-row pt-4">
-                <div class="tm-col-left">
-                    <div class="tm-site-header media">
-                        <i class="fas fa-umbrella-beach fa-3x mt-1 tm-logo"></i>
-                        <div class="media-body">
-                            <h1 class="tm-sitename text-uppercase">diagoona</h1>
-                            <p class="tm-slogon">new bootstrap template</p>
-                        </div>        
+    <header>
+        <h1>Somos Um</h1>
+    </header>
+    <main>
+        <section id="apresentacao" data-aos="fade-up">
+            <div class="apresentacao-container">
+                <h2>
+                    <span class="linha1">Mais que</span><br>
+                    <span class="linha2">Pequeno Gurpo</span><br>
+                    <span class="linha3">Uma</span><br>
+                    <span class="linha4">Família</span>
+                </h2>
+                <div class="imagem-torta">
+                    <img src="imgs/img001.png" alt="Imagem representativa">
+                </div>
+                <p class="texto-apresentacao">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula, nisl nec tincidunt tincidunt, 
+                    nunc eros tincidunt nunc, vitae tincidunt nunc nunc eget nunc. Integer tincidunt nunc non nunc tincidunt.
+                </p>
+            </div>
+        </section>
+        <section id="sobre-nos" data-aos="fade-up">
+            <div class="sobre-nos-container">
+                <h2>
+                    <span class="linha1">amar</span><br>
+                    <span class="linha2">&anunciar</span><br>
+                    <span class="linha3">&aguardar </span><br>
+                    <span class="linha4">&apressar</span>
+                </h2>
+                <p class="texto-sobre-nos">
+                    Somos um pequeno grupo de pessoas que se reúnem para estudar a Bíblia e crescer na fé.
+                    Nosso objetivo é amar a Deus e ao próximo, anunciar o evangelho, aguardar a volta de Cristo e apressar a sua vinda.
+                    Acreditamos que a comunhão e o aprendizado são fundamentais para o nosso crescimento espiritual.
+                </p>
+            </div>
+        </section>
+        <section id="estudo-biblico" data-aos="fade-up">
+            <div class="estudo-biblico-container">
+                <h2>
+                    <span class="linha1">Estude</span><br>
+                    <span class="linha2">a Bíblia</span><br>
+                    <span class="linha3">com a</span><br>
+                    <span class="linha4">gente</span>
+                </h2>
+                <div class="texto-e-botao">
+                    <p class="texto-estudo-biblico">
+                        O estudo bíblico é uma oportunidade de aprofundar seu conhecimento sobre a Palavra de Deus e fortalecer sua fé.
+                        Nossos encontros são abertos a todos, independentemente do nível de conhecimento bíblico.
+                        Venha participar e crescer conosco!
+                    </p>
+                    <a href="estudo-biblico.html" class="botao-estudo">Acessar Estudo Bíblico</a>
+                </div>
+            </div>
+        </section>
+        <section id="encontros" data-aos="fade-up">
+            <div class="encontros-container">
+                <h2>
+                    <span class="linha1">Encontros</span><br>
+                    <span class="linha2">que transformam</span><br>
+                    <span class="linha3">vidas</span>
+                </h2>
+                <div class="galeria-wrapper">
+                    <div class="galeria">
+                        <!-- Adicione 10 imagens para teste -->
+                        <div class="foto" onclick="abrirModal('imgs/36.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/36.jpg" alt="Foto 1">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/35.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/35.jpg" alt="Foto 2">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/34.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/34.jpg" alt="Foto 3">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/33.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/33.jpg" alt="Foto 4">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/30.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/30.jpg" alt="Foto 7">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/29.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/29.jpg" alt="Foto 8">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/28.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/28.jpg" alt="Foto 9">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/27.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/27.jpg" alt="Foto 10">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/26.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/26.jpg" alt="Foto 11">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/23.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/23.jpg" alt="Foto 14">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/22.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/22.jpg" alt="Foto 15">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/21.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/21.jpg" alt="Foto 16">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/20.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/20.jpg" alt="Foto 17">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/19.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/19.jpg" alt="Foto 18">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/18.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/18.jpg" alt="Foto 19">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/17.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/17.jpg" alt="Foto 20">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/16.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/16.jpg" alt="Foto 21">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/15.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/15.jpg" alt="Foto 22">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/14.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/14.jpg" alt="Foto 23">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/13.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/13.jpg" alt="Foto 24">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/12.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/12.jpg" alt="Foto 25">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/11.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/11.jpg" alt="Foto 26">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/10.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/10.jpg" alt="Foto 27">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/09.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/09.jpg" alt="Foto 28">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/08.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/08.jpg" alt="Foto 29">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/07.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/07.jpg" alt="Foto 30">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/06.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/06.jpg" alt="Foto 31">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/05.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/05.jpg" alt="Foto 32">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/04.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/04.jpg" alt="Foto 33">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/03.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/03.jpg" alt="Foto 34">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/02.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/02.jpg" alt="Foto 35">
+                        </div>
+                        <div class="foto" onclick="abrirModal('imgs/01.jpg', 'Momento especial de comunhão e aprendizado.')">
+                            <img src="imgs/01.jpg" alt="Foto 36">
+                        </div>
+                        
                     </div>
                 </div>
-                <div class="tm-col-right">
-                    <nav class="navbar navbar-expand-lg" id="tm-main-nav">
-                        <button class="navbar-toggler toggler-example mr-0 ml-auto" type="button" 
-                            data-toggle="collapse" data-target="#navbar-nav" 
-                            aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span><i class="fas fa-bars"></i></span>
-                        </button>
-                        <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
-                            <ul class="navbar-nav text-uppercase">
-                                <li class="nav-item active">
-                                    <a class="nav-link tm-nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="about.html">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="services.html">Services</a>
-                                </li>                            
-                                <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="contact.html">Contact</a>
-                                </li>
-                            </ul>                            
-                        </div>                        
-                    </nav>
+            </div>
+
+            <!-- Modal -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="fechar" onclick="fecharModal()">&times;</span>
+                    <img id="modal-img" src="" alt="Imagem ampliada">
+                    <p id="modal-texto"></p>
                 </div>
             </div>
-            
-            <div class="tm-row">
-                <div class="tm-col-left"></div>
-                <main class="tm-col-right">
-                    <section class="tm-content">
-                        <h2 class="mb-5 tm-content-title">Diagoona HTML Template</h2>
-                        <p class="mb-5">Diagoona is provided by TemplateMo website. You are allowed to use this template for your websites. You are NOT allowed to redistribute this template ZIP file for a download purpose on any template collection website.</p>
-                        <hr class="mb-5">
-                        <p class="mb-5">Diagoona is Bootstrap v4.4.1 layout. This BG is 50% transparent. You can set the background images auto play settings (true or false in line number 33) in templatemo-script.js file in js folder.</p>                        
-                        <a href="about.html" class="btn btn-primary">Continue...</a>
-                    </section>
-                </main>
-            </div>
-        </div>        
-
-        <div class="tm-row">
-            <div class="tm-col-left text-center">            
-                <ul class="tm-bg-controls-wrapper">
-                    <li class="tm-bg-control active" data-id="0"></li>
-                    <li class="tm-bg-control" data-id="1"></li>
-                    <li class="tm-bg-control" data-id="2"></li>
-                </ul>            
-            </div>        
-            <div class="tm-col-right tm-col-footer">
-                <footer class="tm-site-footer text-right">
-                    <p class="mb-0">Copyright 2020 Diagoona Co. 
-                    
-                    | Design: <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-text-link">TemplateMo</a></p>
-                </footer>
-            </div>  
-        </div>
-
-        <!-- Diagonal background design -->
-        <div class="tm-bg">
-            <div class="tm-bg-left"></div>
-            <div class="tm-bg-right"></div>
-        </div>
-    </div>
-
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.backstretch.min.js"></script>
-    <script src="js/templatemo-script.js"></script>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Somos Um. Todos os direitos reservados.</p>
+        <p>
+            Desenvolvido por <a href="">Kleyson</a> com ❤️
+        </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Duração da animação em milissegundos
+            once: true      // Anima apenas uma vez ao rolar
+        });
+    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>

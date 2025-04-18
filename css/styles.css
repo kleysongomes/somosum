@@ -1,0 +1,801 @@
+/* Configuração geral do layout */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+    margin: 0;
+    font-family: 'Barlow Condensed', Arial, sans-serif; /* Fonte principal */
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Remove rolagem lateral */
+}
+
+/* Aplica a fonte nos títulos e textos */
+h1, h2, p {
+    font-family: 'Barlow Condensed', Arial, sans-serif;
+}
+
+/* Estilo da navbar */
+header {
+    width: 100%;
+    background-color: #6a0dad; /* Roxo vibrante */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Estilo do slogan */
+header p {
+    margin: 0;
+    font-size: 1.5rem; /* Aumenta o tamanho do slogan */
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 0.5rem;
+    color: #f4f4f4; /* Cor clara para contraste */
+}
+
+/* Links da navbar (se houver) */
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px; /* Bordas arredondadas nos links */
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #8a2be2; /* Roxo mais claro ao passar o mouse */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Configuração para o layout principal */
+main {
+    flex: 1; /* Faz o conteúdo principal ocupar o espaço restante */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ajustes gerais para as seções */
+section {
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box; /* Inclui o padding no cálculo do tamanho */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilo da seção Apresentação */
+#apresentacao {
+    background-color: #6a0dad; /* Roxo vibrante */
+    color: white;
+    text-align: left; /* Alinha o texto à esquerda */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    padding: 2rem 4rem; /* Adiciona mais margem à esquerda */
+    position: relative;
+}
+
+#apresentacao h2 {
+    font-size: 4rem; /* Tamanho grande para o texto */
+    font-weight: bold;
+    line-height: 1.2;
+    color: #f4f4f4; /* Cor clara para contraste */
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+}
+
+/* Estilo das linhas do texto */
+#apresentacao .linha1 {
+    color: #33ff57; /* Verde vibrante */
+    transform: rotate(-5deg); /* Inclinação leve */
+    display: inline-block;
+}
+
+#apresentacao .linha2 {
+    color: #ffeb3b; /* Amarelo vibrante */
+    transform: rotate(5deg); /* Inclinação leve */
+    display: inline-block;
+}
+
+#apresentacao .linha3 {
+    color: #33c4ff; /* Azul vibrante */
+    transform: rotate(-3deg); /* Inclinação leve */
+    display: inline-block;
+}
+
+#apresentacao .linha4 {
+    color: #ff33a8; /* Rosa vibrante */
+    transform: rotate(7deg); /* Inclinação leve */
+    display: inline-block;
+}
+
+/* Ajusta a imagem inclinada */
+.imagem-torta {
+    transform: rotate(-10deg); /* Inclinação da imagem */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    border: 5px solid #fff; /* Borda branca ao redor da imagem */
+    display: inline-block;
+    position: absolute;
+    top: 30%; /* Aproxima a imagem do texto */
+    left: 60%; /* Ajusta a posição horizontal */
+    max-width: 200px; /* Limita o tamanho da imagem */
+}
+
+/* Estilo do texto de apresentação */
+.texto-apresentacao {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #f4f4f4; /* Cor clara */
+    max-width: 600px; /* Limita a largura do texto */
+    align-self: center; /* Centraliza o texto abaixo de tudo */
+}
+
+/* Estilo da seção Sobre Nós */
+#sobre-nos {
+    background-color: #def54b; /* Fundo verde claro */
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+}
+
+#sobre-nos h2 {
+    font-size: 3.5rem; /* Tamanho grande para o texto */
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+}
+
+/* Estilo das linhas do texto */
+#sobre-nos .linha1,
+#sobre-nos .linha3 {
+    color: #8c52ff; /* Roxo */
+    display: inline-block;
+}
+
+#sobre-nos .linha2,
+#sobre-nos .linha4 {
+    color: #9d9cb9; /* Cinza claro */
+    display: inline-block;
+}
+
+/* Estilo do texto de apresentação */
+.texto-sobre-nos {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #333; /* Cor escura para contraste */
+    max-width: 600px; /* Limita a largura do texto */
+}
+
+#sobre-nos {
+    background-color: #def54b; /* Azul vibrante */
+}
+
+/* Estilo da seção Estudo Bíblico */
+#estudo-biblico {
+    background-color: #5271ff; /* Verde vibrante */
+    color: white;
+    text-align: center; /* Centraliza o texto */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    padding: 2rem; /* Adiciona margem interna */
+    position: relative;
+    height: auto; /* Remove a altura fixa */
+}
+
+#estudo-biblico h2 {
+    font-size: 4rem; /* Tamanho grande para o texto */
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 0 0 1rem 0; /* Espaço abaixo do título */
+    position: relative;
+}
+
+/* Estilo das linhas do texto */
+#estudo-biblico .linha1 {
+    color: #ff33a8; /* Rosa vibrante */
+    transform: rotate(-5deg); /* Inclinação leve */
+    display: inline-block;
+}
+
+#estudo-biblico .linha2 {
+    color: #ffeb3b; /* Amarelo vibrante */
+    transform: rotate(5deg); /* Inclinação leve */
+    display: inline-block;
+}
+
+#estudo-biblico .linha3 {
+    color: #33c4ff; /* Azul vibrante */
+    transform: rotate(-3deg); /* Inclinação leve */
+    display: inline-block;
+}
+
+#estudo-biblico .linha4 {
+    color: #ffffff; /* Roxo vibrante */
+    transform: rotate(7deg); /* Inclinação leve */
+    display: inline-block;
+}
+
+/* Estilo do texto e botão */
+.texto-e-botao {
+    text-align: center; /* Centraliza o texto e o botão */
+    margin-top: 1.5rem; /* Espaço acima do bloco */
+}
+
+.texto-estudo-biblico {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #f4f4f4; /* Cor clara */
+    margin-bottom: 1rem;
+}
+
+.botao-estudo {
+    display: inline-block;
+    background-color: #6a0dad; /* Roxo vibrante */
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.botao-estudo:hover {
+    background-color: #8a2be2; /* Roxo mais claro ao passar o mouse */
+}
+
+/* Estilo da seção Encontros */
+#encontros {
+    background-color: #ff33a8; /* Fundo rosa vibrante */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+#encontros h2 {
+    font-size: 3.5rem; /* Tamanho grande para o texto */
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 0 0 2rem 0; /* Espaço abaixo do título */
+    position: relative;
+}
+
+/* Wrapper para limitar o scroll dentro da seção */
+.galeria-wrapper {
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 1200px; /* Limita a largura máxima no desktop */
+    margin: 0 auto; /* Centraliza a galeria */
+    padding: 1rem; /* Espaçamento interno */
+    display: flex;
+    flex-wrap: wrap; /* Permite que as imagens quebrem linha */
+    gap: 1rem; /* Espaço entre as imagens */
+    justify-content: center; /* Centraliza o conteúdo */
+    background-color: #ff33a8; /* Fundo rosa vibrante */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    box-sizing: border-box; /* Inclui o padding no cálculo do tamanho */
+}
+
+/* Estilo da galeria */
+.galeria {
+    display: flex;
+    gap: 1rem; /* Espaço entre as fotos */
+    scroll-snap-type: x mandatory; /* Suaviza a rolagem horizontal */
+    scrollbar-width: thin; /* Barra de rolagem fina no Firefox */
+    padding: 0 1rem; /* Espaçamento interno horizontal */
+    width: auto; /* Garante que a galeria se ajuste ao conteúdo */
+}
+
+.galeria::-webkit-scrollbar {
+    height: 6px; /* Reduz a altura da barra de rolagem */
+}
+
+.galeria::-webkit-scrollbar-thumb {
+    background-color: #6a0dad; /* Cor da barra de rolagem */
+    border-radius: 3px; /* Bordas arredondadas */
+}
+
+.galeria::-webkit-scrollbar-track {
+    background-color: #f4f4f4; /* Cor do fundo da barra de rolagem */
+}
+
+/* Estilo das fotos */
+.galeria .foto {
+    flex: 0 1 calc(25% - 1rem); /* 4 imagens por linha no desktop */
+    max-width: calc(25% - 1rem); /* Limita a largura máxima */
+    aspect-ratio: 1; /* Mantém as imagens quadradas */
+    border-radius: 8px; /* Bordas arredondadas */
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    background-color: white; /* Fundo branco para destacar as imagens */
+    transition: transform 0.3s ease; /* Animação ao passar o mouse */
+}
+
+.galeria .foto:hover {
+    transform: scale(1.05); /* Aumenta levemente a imagem ao passar o mouse */
+}
+
+.galeria .foto img {
+    width: 100%; /* A imagem ocupa toda a largura do container */
+    height: 100%; /* A imagem ocupa toda a altura do container */
+    object-fit: cover; /* Ajusta a imagem para preencher o container */
+}
+
+/* Estilo do modal */
+.modal {
+    display: none; /* Oculta o modal por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com transparência */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 1rem; /* Espaçamento interno para dispositivos móveis */
+    overflow-y: auto; /* Permite rolagem vertical se necessário */
+}
+
+.modal-content {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+}
+
+.modal-content img {
+    max-width: 100%; /* A imagem ocupa no máximo a largura do modal */
+    max-height: 300px; /* Limita a altura máxima da imagem */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    object-fit: contain; /* Garante que a imagem seja ajustada sem cortar */
+}
+
+.modal-content .fechar {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+.modal-content p {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}
+
+/* Estilo da galeria */
+.galeria {
+    display: flex;
+    gap: 1rem; /* Espaço entre as fotos */
+    overflow-x: auto; /* Ativa a rolagem horizontal */
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory; /* Suaviza a rolagem horizontal */
+    scrollbar-width: thin; /* Estiliza a barra de rolagem no Firefox */
+}
+
+.galeria::-webkit-scrollbar {
+    height: 8px; /* Altura da barra de rolagem */
+}
+
+.galeria::-webkit-scrollbar-thumb {
+    background-color: #6a0dad; /* Cor da barra de rolagem */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+.galeria::-webkit-scrollbar-track {
+    background-color: #f4f4f4; /* Cor do fundo da barra de rolagem */
+}
+
+.galeria .foto {
+    flex: 0 0 auto; /* Garante que as fotos fiquem lado a lado */
+    width: 250px; /* Largura fixa para cada foto */
+    text-align: center;
+    scroll-snap-align: start; /* Alinha cada foto ao início ao rolar */
+    background-color: white; /* Fundo branco para destacar a descrição */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    overflow: hidden;
+}
+
+.galeria .foto img {
+    width: 100%; /* A imagem ocupa toda a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block;
+}
+
+.galeria .foto .descricao {
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #333; /* Texto escuro para contraste */
+}
+
+/* Estilo da seção Encontros */
+#encontros {
+    background-color: #ff33a8; /* Rosa vibrante */
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+}
+
+#encontros h2 {
+    font-size: 3.5rem; /* Tamanho grande para o texto */
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+}
+
+/* Estilo das linhas do texto */
+#encontros .linha1 {
+    color: #33ff57; /* Verde vibrante */
+    display: inline-block;
+}
+
+#encontros .linha2 {
+    color: #ffeb3b; /* Amarelo vibrante */
+    display: inline-block;
+}
+
+#encontros .linha3 {
+    color: #33c4ff; /* Azul vibrante */
+    display: inline-block;
+}
+
+/* Estilo do texto de apresentação */
+.texto-encontros {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #f4f4f4; /* Cor clara */
+    max-width: 600px; /* Limita a largura do texto */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    section {
+        padding: 1rem; /* Reduz o padding das seções */
+        min-height: auto; /* Permite que a altura da seção cresça com o conteúdo */
+    }
+
+    h1, h2, p {
+        font-size: 1rem; /* Ajusta o tamanho do texto */
+        line-height: 1.5; /* Melhora a legibilidade */
+    }
+
+    #apresentacao h2 {
+        font-size: 2.5rem; /* Reduz o tamanho do texto */
+    }
+
+    .imagem-torta img {
+        width: 200px; /* Reduz o tamanho da imagem */
+    }
+
+    .imagem-torta {
+        top: 60%; /* Ajusta a posição da imagem em telas menores */
+        right: 0; /* Centraliza horizontalmente */
+    }
+
+    .imagem-torta {
+        display: none; /* Remove a imagem da visualização */
+    }
+
+    #apresentacao h2 {
+        font-size: 2.5rem; /* Reduz o tamanho do texto */
+    }
+
+    .texto-apresentacao {
+        font-size: 1rem; /* Ajusta o tamanho do texto de apresentação */
+    }
+
+    #estudo-biblico {
+        flex-direction: column; /* Organiza o conteúdo em coluna */
+        align-items: center; /* Centraliza o conteúdo horizontalmente */
+        text-align: center; /* Centraliza o texto */
+        padding: 2rem; /* Ajusta o padding */
+    }
+
+    #estudo-biblico h2 {
+        font-size: 2.5rem; /* Reduz o tamanho do texto */
+        margin-bottom: 1rem; /* Adiciona espaço abaixo do título */
+    }
+
+    .texto-e-botao {
+        margin-left: 0; /* Remove o espaçamento lateral */
+        text-align: center; /* Centraliza o texto e o botão */
+    }
+
+    .texto-estudo-biblico {
+        font-size: 1rem; /* Ajusta o tamanho do texto */
+    }
+
+    .modal-content {
+        max-width: 90%; /* Ajusta a largura do modal em telas menores */
+        padding: 1rem;
+    }
+
+    .modal-content img {
+        max-height: 200px; /* Reduz a altura máxima da imagem em dispositivos móveis */
+    }
+
+    .modal-content p {
+        font-size: 0.9rem; /* Ajusta o tamanho do texto */
+    }
+
+    #encontros {
+        padding: 1.5rem; /* Ajusta o padding no mobile */
+    }
+
+    section {
+        padding: 1rem; /* Reduz o padding das seções */
+        min-height: auto; /* Permite que a altura da seção cresça com o conteúdo */
+    }
+}
+
+/* Ajustes gerais para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    header {
+        padding: 1rem; /* Reduz o padding do cabeçalho */
+    }
+
+    header h1 {
+        font-size: 1.8rem; /* Reduz o tamanho do título */
+    }
+
+    header p {
+        font-size: 1.2rem; /* Ajusta o tamanho do slogan */
+    }
+
+    section {
+        padding: 1rem; /* Reduz o padding das seções */
+        margin: 0.5rem 0; /* Adiciona espaçamento entre as seções */
+    }
+
+    h2 {
+        font-size: 2rem; /* Reduz o tamanho dos títulos */
+        line-height: 1.3; /* Ajusta o espaçamento entre linhas */
+    }
+
+    p {
+        font-size: 1rem; /* Ajusta o tamanho do texto */
+        line-height: 1.5; /* Melhora a legibilidade */
+    }
+
+    /* Ajustes para a seção "Apresentação" */
+    #apresentacao {
+        flex-direction: column; /* Organiza o conteúdo em coluna */
+        align-items: center; /* Centraliza o conteúdo */
+        text-align: center; /* Centraliza o texto */
+        padding: 1.5rem; /* Ajusta o padding */
+    }
+
+    #apresentacao h2 {
+        font-size: 2.5rem; /* Reduz o tamanho do texto */
+        margin-bottom: 1rem; /* Adiciona espaço abaixo do título */
+    }
+
+    .imagem-torta {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none; /* Remove a inclinação da imagem */
+        margin: 1rem auto; /* Centraliza a imagem */
+        max-width: 150px; /* Reduz o tamanho da imagem */
+    }
+
+    .texto-apresentacao {
+        font-size: 1rem; /* Ajusta o tamanho do texto */
+        margin-top: 1rem; /* Adiciona espaço acima do texto */
+    }
+
+    /* Ajustes para a seção "Sobre Nós" */
+    #sobre-nos {
+        padding: 1.5rem; /* Ajusta o padding */
+    }
+
+    #sobre-nos h2 {
+        font-size: 2.2rem; /* Reduz o tamanho do título */
+    }
+
+    .texto-sobre-nos {
+        font-size: 1rem; /* Ajusta o tamanho do texto */
+        margin-top: 1rem; /* Adiciona espaço acima do texto */
+    }
+
+    /* Ajustes para a seção "Estudo Bíblico" */
+    #estudo-biblico {
+        flex-direction: column; /* Organiza o conteúdo em coluna */
+        align-items: center; /* Centraliza o conteúdo horizontalmente */
+        text-align: center; /* Centraliza o texto */
+        padding: 1.5rem; /* Ajusta o padding */
+    }
+
+    #estudo-biblico h2 {
+        font-size: 2.5rem; /* Reduz o tamanho do texto */
+        margin-bottom: 1rem; /* Adiciona espaço abaixo do título */
+    }
+
+    .texto-e-botao {
+        margin-left: 0; /* Remove o espaçamento lateral */
+        text-align: center; /* Centraliza o texto e o botão */
+    }
+
+    .texto-estudo-biblico {
+        font-size: 1rem; /* Ajusta o tamanho do texto */
+    }
+
+    .botao-estudo {
+        font-size: 0.9rem; /* Ajusta o tamanho do botão */
+        padding: 0.6rem 1rem; /* Ajusta o padding do botão */
+    }
+
+    /* Ajustes para a seção "Encontros" */
+    #encontros {
+        padding: 1.5rem; /* Ajusta o padding */
+    }
+
+    #encontros h2 {
+        font-size: 2.5rem; /* Reduz o tamanho do título */
+        margin-bottom: 1rem; /* Adiciona espaço abaixo do título */
+    }
+
+    .galeria-wrapper {
+        padding: 1rem 0; /* Ajusta o padding da galeria */
+    }
+
+    .galeria .foto {
+        width: 120px; /* Reduz o tamanho das miniaturas */
+        height: 120px;
+    }
+
+    /* Ajustes para o modal */
+    .modal-content {
+        max-width: 90%; /* Ajusta a largura do modal em telas menores */
+        padding: 1rem;
+    }
+
+    .modal-content img {
+        max-height: 200px; /* Reduz a altura máxima da imagem no modal */
+    }
+
+    .modal-content p {
+        font-size: 0.9rem; /* Ajusta o tamanho do texto no modal */
+    }
+}
+
+/* Ajustes para a galeria no mobile */
+@media (max-width: 768px) {
+    .galeria-wrapper {
+        width: 100%; /* Garante que o wrapper ocupe 100% da largura da tela */
+        max-width: 100%; /* Impede que o wrapper ultrapasse os limites */
+        overflow-x: hidden; /* Remove qualquer rolagem lateral indesejada */
+        padding: 1rem; /* Ajusta o padding */
+        display: flex;
+        flex-wrap: wrap; /* Permite que as fotos quebrem linha */
+        justify-content: center; /* Centraliza o conteúdo */
+        background-color: #ff33a8; /* Mantém o fundo rosa vibrante */
+        border-radius: 8px; /* Bordas arredondadas */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    }
+
+    .galeria {
+        display: flex;
+        flex-wrap: wrap; /* Permite que as fotos quebrem linha */
+        gap: 1rem; /* Espaço entre as fotos */
+        justify-content: center; /* Centraliza as fotos */
+        width: 100%; /* Garante que a galeria ocupe toda a largura do wrapper */
+        padding: 0; /* Remove o padding horizontal */
+    }
+
+    .galeria .foto {
+        flex: 0 1 calc(33.33% - 1rem); /* Fotos ocupam 1/3 da largura com espaçamento */
+        max-width: calc(33.33% - 1rem); /* Limita a largura máxima */
+        height: auto; /* Ajusta a altura automaticamente */
+        border-radius: 8px; /* Bordas arredondadas */
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+        background-color: white; /* Fundo branco para destacar as imagens */
+        transition: transform 0.3s ease; /* Animação ao passar o mouse */
+    }
+
+    .galeria .foto img {
+        width: 100%; /* A imagem ocupa toda a largura do container */
+        height: auto; /* Mantém a proporção da imagem */
+        object-fit: cover; /* Ajusta a imagem para preencher o container */
+    }
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .galeria .foto {
+        flex: 0 1 calc(50% - 1rem); /* 2 imagens por linha no mobile */
+        max-width: calc(50% - 1rem); /* Limita a largura máxima */
+    }
+}
+
+/* Estilo do rodapé */
+footer {
+    width: 100%; /* Ocupa toda a largura da tela */
+    background-color: #333; /* Fundo escuro */
+    color: white; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 1rem 0; /* Espaçamento interno */
+    margin-top: 2rem; /* Espaçamento acima do rodapé */
+    font-size: 0.9rem; /* Tamanho do texto */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave no topo */
+}
+
+footer a {
+    color: #ff33a8; /* Cor vibrante para links */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
