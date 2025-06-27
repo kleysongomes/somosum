@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontre um Grupo - SOMOS UM</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .encontre-container {
+            max-width: 1000px;
+            margin: 120px auto 80px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .encontre-container h1 {
+            font-family: var(--font-headings);
+            font-size: 2.5rem;
+            color: var(--color-dark);
+            margin-bottom: 20px;
+        }
+
+        .encontre-container p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: var(--color-text);
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .btn-voltar {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background-color: var(--color-blue);
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-voltar:hover {
+            background-color: #3367D6;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">SOMOS UM</a>
+        </div>
+    </header>
+
+    <div class="encontre-container">
+        <h1>Encontre um Grupo Perto de Você</h1>
+        <p>Utilize o mapa abaixo para localizar igrejas e pequenos grupos da Igreja Adventista na sua região:</p>
+
+        <iframe src="https://igrejas.adventistas.org/pt/Mapa"></iframe>
+
+        <a href="index.html" class="btn-voltar">Voltar para o Início</a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SOMOS UM. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100,
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo Bíblico - SOMOS UM</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .estudo-container {
+            max-width: 900px;
+            margin: 120px auto 80px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .estudo-container h1 {
+            font-family: var(--font-headings);
+            font-size: 2.8rem;
+            color: var(--color-dark);
+            margin-bottom: 20px;
+        }
+
+        .estudo-container p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: var(--color-text);
+        }
+
+        .btn-whatsapp, .btn-adventista {
+            display: inline-block;
+            padding: 14px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+        }
+        .btn-whatsapp:hover {
+            background-color: #1DA851;
+            transform: translateY(-3px);
+        }
+
+        .btn-adventista {
+            background-color: var(--color-blue);
+            color: white;
+        }
+        .btn-adventista:hover {
+            background-color: #3367D6;
+            transform: translateY(-3px);
+        }
+
+        .materiais-estudo {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: #f8f9fa;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-light);
+        }
+
+        .materiais-estudo h2 {
+            color: var(--color-dark);
+            margin-bottom: 15px;
+        }
+
+        .btn-outline {
+            display: inline-block;
+            background-color: transparent;
+            border: 2px solid var(--color-blue);
+            color: var(--color-blue);
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--color-blue);
+            color: white;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">SOMOS UM</a>
+        </div>
+    </header>
+
+    <div class="estudo-container">
+        <h1>Estudo Bíblico</h1>
+        <p>Queremos te convidar para o nosso grupo no WhatsApp! Assim podemos te conhecer melhor e compartilhar os materiais de estudo com você.</p>
+        <a class="btn-whatsapp" href="https://chat.whatsapp.com/HTAmo3hc4nsIcAeKX6gNsx" target="_blank">Entrar no Grupo no WhatsApp</a>
+        <br>
+        <br>
+        <p>Conheça também mais sobre a Igreja Adventista e nossos projetos ao redor do mundo:</p>
+        <a class="btn-adventista" href="https://www.adventistas.org/pt/" target="_blank">Conheça a Igreja Adventista</a>
+
+        <div class="materiais-estudo">
+            <h2>Materiais de Estudo</h2>
+            <p>Baixe os materiais da série <strong>"Ouvindo a Voz de Deus"</strong> diretamente no site:</p>
+            <a href="https://pastor.adventistas.org/pt/ouvindo-a-voz-de-deus/" target="_blank" class="btn-outline">
+                Acessar Materiais
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SOMOS UM. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100,
+        });
+    </script>
+
+</body>
+</html>

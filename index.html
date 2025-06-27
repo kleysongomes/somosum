@@ -1,202 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Somos um - PG</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <title>SOMOS UM - Pequeno Grupo</title>
+    <meta name="description" content="Website do grupo de jovens SOMOS UM. Encontros, estudos bíblicos, valores e muito mais.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Somos Um</h1>
+
+    <header id="main-header">
+        <div class="container">
+            <a href="#inicio" class="logo">Pequeno Grupo</a>
+            <nav>
+                <ul>
+                    <li><a href="#sobre-nos">Sobre Nós</a></li>
+                    <li><a href="#valores">Valores</a></li>
+                    <li><a href="#estudo-biblico">Estudo</a></li>
+                    <li><a href="#nossos-encontros">Encontros</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <section id="apresentacao" data-aos="fade-up">
-            <div class="apresentacao-container">
-                <h2>
-                    <span class="linha1">Mais que</span><br>
-                    <span class="linha2">Pequeno Grupo</span><br>
-                    <span class="linha3">Uma</span><br>
-                    <span class="linha4">Família</span>
-                </h2>
-                <div class="imagem-torta">
-                    <img src="imgs/img001.png" alt="Imagem representativa">
+        <section id="inicio">
+            <div class="container">
+                <h1 data-aos="fade-up">SOMOS UM</h1>
+                <p data-aos="fade-up" data-aos-delay="200">Unidos pela fé, amizade e propósito.</p>
+                <a href="#sobre-nos" class="btn btn-outline" data-aos="fade-up" data-aos-delay="400">Conheça o Grupo</a>
+            </div>
+        </section>
+
+        <section id="sobre-nos">
+            <div class="container section-layout">
+                <div class="section-text" data-aos="fade-right">
+                    <h2>Quem Somos</h2>
+                    <p>O SOMOS UM é mais que um grupo, é uma família. Nascemos do desejo de criar um espaço de acolhimento, crescimento espiritual e amizades verdadeiras para os jovens de nossa igreja. Aqui, todos são bem-vindos para compartilhar, aprender e caminhar juntos.</p>
                 </div>
-                <p class="texto-apresentacao">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula, nisl nec tincidunt tincidunt, 
-                    nunc eros tincidunt nunc, vitae tincidunt nunc nunc eget nunc. Integer tincidunt nunc non nunc tincidunt.
-                </p>
-            </div>
-        </section>
-        <section id="sobre-nos" data-aos="fade-up">
-            <div class="sobre-nos-container">
-                <h2>
-                    <span class="linha1">amar</span><br>
-                    <span class="linha2">&anunciar</span><br>
-                    <span class="linha3">&aguardar </span><br>
-                    <span class="linha4">&apressar</span>
-                </h2>
-                <p class="texto-sobre-nos">
-                    Somos um pequeno grupo de pessoas que se reúnem para estudar a Bíblia e crescer na fé.
-                    Nosso objetivo é amar a Deus e ao próximo, anunciar o evangelho, aguardar a volta de Cristo e apressar a sua vinda.
-                    Acreditamos que a comunhão e o aprendizado são fundamentais para o nosso crescimento espiritual.
-                </p>
-            </div>
-        </section>
-        <section id="estudo-biblico" data-aos="fade-up">
-            <div class="estudo-biblico-container">
-                <h2>
-                    <span class="linha1">Estude</span><br>
-                    <span class="linha2">a Bíblia</span><br>
-                    <span class="linha3">com a</span><br>
-                    <span class="linha4">gente</span>
-                </h2>
-                <div class="texto-e-botao">
-                    <p class="texto-estudo-biblico">
-                        O estudo bíblico é uma oportunidade de aprofundar seu conhecimento sobre a Palavra de Deus e fortalecer sua fé.
-                        Nossos encontros são abertos a todos, independentemente do nível de conhecimento bíblico.
-                        Venha participar e crescer conosco!
-                    </p>
-                    <a href="estudo-biblico.html" class="botao-estudo">Acessar Estudo Bíblico</a>
+                <div class="section-image" data-aos="fade-left">
+                    <img src="imgs/36.jpg" alt="Grupo de jovens sorrindo">
                 </div>
             </div>
         </section>
-        <section id="encontros" data-aos="fade-up">
-            <div class="encontros-container">
-                <h2>
-                    <span class="linha1">Encontros</span><br>
-                    <span class="linha2">que transformam</span><br>
-                    <span class="linha3">vidas</span>
-                </h2>
-                <div class="galeria-wrapper">
-                    <div class="galeria">
-                        <!-- Adicione 10 imagens para teste -->
-                        <div class="foto" onclick="abrirModal('imgs/36.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/36.jpg" alt="Foto 1">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/35.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/35.jpg" alt="Foto 2">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/34.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/34.jpg" alt="Foto 3">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/33.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/33.jpg" alt="Foto 4">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/30.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/30.jpg" alt="Foto 7">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/29.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/29.jpg" alt="Foto 8">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/28.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/28.jpg" alt="Foto 9">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/27.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/27.jpg" alt="Foto 10">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/26.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/26.jpg" alt="Foto 11">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/23.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/23.jpg" alt="Foto 14">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/22.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/22.jpg" alt="Foto 15">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/21.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/21.jpg" alt="Foto 16">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/20.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/20.jpg" alt="Foto 17">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/19.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/19.jpg" alt="Foto 18">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/18.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/18.jpg" alt="Foto 19">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/17.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/17.jpg" alt="Foto 20">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/16.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/16.jpg" alt="Foto 21">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/15.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/15.jpg" alt="Foto 22">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/14.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/14.jpg" alt="Foto 23">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/13.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/13.jpg" alt="Foto 24">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/12.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/12.jpg" alt="Foto 25">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/11.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/11.jpg" alt="Foto 26">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/10.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/10.jpg" alt="Foto 27">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/09.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/09.jpg" alt="Foto 28">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/08.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/08.jpg" alt="Foto 29">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/07.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/07.jpg" alt="Foto 30">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/06.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/06.jpg" alt="Foto 31">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/05.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/05.jpg" alt="Foto 32">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/04.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/04.jpg" alt="Foto 33">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/03.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/03.jpg" alt="Foto 34">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/02.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/02.jpg" alt="Foto 35">
-                        </div>
-                        <div class="foto" onclick="abrirModal('imgs/01.jpg', 'Momento especial de comunhão e aprendizado.')">
-                            <img src="imgs/01.jpg" alt="Foto 36">
-                        </div>
+
+        <section id="valores">
+           <div class="cards-container">
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon" style="background-color: var(--color-red);">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </div>
+                    <h3>Amar</h3>
+                    <p>Amar a Deus acima de tudo e ao próximo como a nós mesmos, refletindo o caráter de Cristo.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon" style="background-color: var(--color-blue);">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.29 2.29A1 1 0 0 0 19 2H6.5a2.5 2.5 0 0 0 0 5H18v5.35a3.52 3.52 0 0 0-2.06 3.32c0 1.93 1.57 3.5 3.5 3.5s3.5-1.57 3.5-3.5a3.52 3.52 0 0 0-2.06-3.32V8h1.06A1 1 0 0 0 22 7V3a1 1 0 0 0-.71-.97zM5 13a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1H5z"/>
+                        </svg>
+                    </div>
+                    <h3>Anunciar</h3>
+                    <p>Compartilhar as boas novas do Evangelho com ousadia e amor, em palavras e ações.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon" style="background-color: var(--color-green);">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6 2v6h.01L6 8.01 10 12l-4 4 .01.01H6V22h12v-5.99h-.01L18 16l-4-4 4-3.99-.01-.01H18V2H6zm10 14.5V20H8v-3.5l4-4 4 4zm-4-5l-4-4V4h8v3.5l-4 4z"/>
+                        </svg>
+                    </div>
+                    <h3>Aguardar</h3>
+                    <p>Viver em santa expectativa pela volta de Jesus, mantendo nossa fé e esperança firmes n'Ele.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-icon" style="background-color: var(--color-yellow);">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm-2.19 8.31l-1.37-2.59C9.52 10.45 8.78 10 8 10c-.79 0-1.53.45-1.94 1.22l-1.43 2.59c-.49.88.08 1.94 1.08 2.12.33.06.67.06.99 0l1.22-.34 1.37 2.59c.49.88 1.55 1.25 2.44.75.6-.33.97-1 .97-1.72V15c0-.62-.32-1.19-.83-1.5L13 12.62l-1.69.89zM8.34 6.5C8.07 7.02 7.55 7.37 7 7.52V10h1c.17 0 .34.02.5.05l1.37 2.59L12 11.5l.3-.15c.66-.33 1.44-.13 1.9.51l2.5 3.5H19v-3c0-1.1-.9-2-2-2h-1.5c-.43 0-.83.14-1.16.38L12 11.5z"/>
+                        </svg>
+                    </div>
+                    <h3>Apressar</h3>
+                    <p>Atuar ativamente no Reino de Deus, contribuindo para que a promessa de Sua volta se cumpra.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="estudo-biblico">
+            <div class="container" data-aos="zoom-in">
+                <h2>Nosso Estudo Bíblico</h2>
+                <p>Aprofunde seu conhecimento e tire suas dúvidas em um ambiente descontraído.</p>
+                <div class="info-estudo">
+                    <p><strong>Tema Atual:</strong>Ouvindo a Voz de Deus</p>
+                    <p><strong>Quando:</strong> Fins de semana, às 19h30</p>
+                    <p><strong>Onde:</strong> Na casa dos membros</p>
+                </div>
+                <a href="estudo.html" class="btn">Participe Conosco</a>
+                <br>
+                <a href="encontre.html" class="btn" style="margin-top: 10px;">Ou encontre um grupo perto de você</a>
+            </div>
+        </section>
+
+        <section id="nossos-encontros">
+            <div class="container">
+                <h2 data-aos="fade-up">Nossos Encontros</h2>
+                
+                <div class="swiper" data-aos="fade-up" data-aos-delay="200">
+                    <div class="swiper-wrapper">
                         
                     </div>
-                </div>
-            </div>
-
-            <!-- Modal -->
-            <div id="modal" class="modal">
-                <div class="modal-content">
-                    <span class="fechar" onclick="fecharModal()">&times;</span>
-                    <img id="modal-img" src="" alt="Imagem ampliada">
-                    <p id="modal-texto"></p>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
     </main>
+    
     <footer>
-        <p>© 2025 Somos Um. Todos os direitos reservados.</p>
-        <p>
-            Desenvolvido por <a href="">Kleyson</a> com ❤️
-        </p>
+        <div class="container">
+            <p>&copy; 2025 SOMOS UM. Todos os direitos reservados.</p>
+            <p>Siga-nos nas redes sociais!</p>
+            </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000, // Duração da animação em milissegundos
-            once: true      // Anima apenas uma vez ao rolar
-        });
-    </script>
-    <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
